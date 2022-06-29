@@ -51,3 +51,9 @@ export const countersReducer = createSlice({
 
 export const { addCounter, increment, decrement, removeCounter } =
   countersReducer.actions;
+
+export const actionsCounterComponent = {
+  increment: increment,
+  decrement: decrement,
+  remove: removeCounter,
+};

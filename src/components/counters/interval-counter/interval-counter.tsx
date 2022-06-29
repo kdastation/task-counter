@@ -20,10 +20,13 @@ const IntervalCounter: FC<IntervalCounterProps> = (props) => {
       clearInterval(incrementOnInterval);
     };
   }, []);
+  const removeOnClick = () => {
+    emit(counter.id, "remove");
+  };
   return (
     <div className={styles.interval_counter}>
       <span>{counter.count}</span>
-      <Button onClick={() => emit(counter.id, "remove")}>Удалить</Button>
+      <Button onClick={removeOnClick}>Удалить</Button>
     </div>
   );
 };

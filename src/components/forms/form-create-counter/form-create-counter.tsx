@@ -5,12 +5,12 @@ import { Button } from "../../../ui-components/button/button";
 
 const FormCreateCounter: FC = () => {
   const dispatch = useDispatch();
-  const createCounter = () => {
+  const addCounterOnClick = () => {
     dispatch(addCounter());
   };
   return (
     <div>
-      <Button onClick={createCounter}>Добавить новый счётчик</Button>
+      <Button onClick={addCounterOnClick}>Добавить новый счётчик</Button>
     </div>
   );
 };
