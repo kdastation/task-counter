@@ -1,6 +1,6 @@
 import React from "react";
-import { Counters } from "./components/counters/counters";
-import { FormCreateCounter } from "./components/forms/form-create-counter/form-create-counter";
+import { Counters } from "../counters/counters";
+import { FormCreateCounter } from "../forms/form-create-counter/form-create-counter";
 import styles from "./app.module.scss";
 
 function App() {
